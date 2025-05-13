@@ -14,3 +14,11 @@ CREATE TABLE Students (
     PhoneNumber VARCHAR(20),
     Address VARCHAR(255)
 );
+
+-- Create Courses table
+CREATE TABLE Courses (
+    CourseID INT PRIMARY KEY AUTO_INCREMENT,
+    CourseName VARCHAR(100) NOT NULL,
+    CourseCode VARCHAR(10) NOT NULL UNIQUE,
+    Department VARCHAR(50)
+);
