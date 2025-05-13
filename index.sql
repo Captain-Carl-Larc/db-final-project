@@ -66,3 +66,17 @@ INSERT INTO Courses (CourseName, CourseCode, Department) VALUES
 ('Probability and Statistics', 'ST201', 'Statistics'),
 ('Thermodynamics', 'PH202', 'Physics'),
 ('Advanced Algorithms', 'CS401', 'Computer Science');
+
+
+-- Inserting into Enrollments table
+INSERT INTO Enrollments (StudentID, CourseID, AcademicYear) VALUES
+(1, 1, '2023-2024'),
+(2, 2, '2023-2024'),
+(1, 4, '2023-2024'),
+(3, 1, '2024-2025'),
+(4, 3, '2023-2024'),
+(2, 4, '2024-2025'),
+(5, 5, '2023-2024'),
+(3, 7, '2024-2025'),
+(6, 6, '2023-2024'),
+(4, 8, '2024-2025');
