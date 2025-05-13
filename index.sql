@@ -98,4 +98,5 @@ INSERT INTO Grades (EnrollmentID, Grade) VALUES
 -- Retrieving all data from Students tables without any conditions
 SELECT * FROM Students;
 
-
+-- Retrieving all data from Courses tables without any conditions
+SELECT * FROM Courses;
