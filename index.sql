@@ -122,3 +122,11 @@ WHERE g.Grade = 'A'
 GROUP BY c.CourseName
 ORDER BY NumberOfAs DESC
 LIMIT 1;
+
+
+-- Find the course with the highest number of enrollments
+SELECT c.CourseName, COUNT(e.CourseID) AS NumberOfEnrollments
+FROM Courses c
+JOIN Enrollments e ON c.CourseID = e.CourseID
+GROUP BY c.CourseName
+ORDER BY NumberOfEnrollments DESC;
