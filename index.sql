@@ -22,3 +22,12 @@ CREATE TABLE Courses (
     CourseCode VARCHAR(10) NOT NULL UNIQUE,
     Department VARCHAR(50)
 );
+
+CREATE TABLE Enrollments (
+    EnrollmentID INT PRIMARY KEY AUTO_INCREMENT,
+    StudentID INT,
+    CourseID INT,
+    AcademicYear VARCHAR(10),
+    FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
+    FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
+);
