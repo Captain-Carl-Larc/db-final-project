@@ -112,3 +112,13 @@ SELECT Grade, COUNT(EnrollmentID) AS NumberOfStudents
 FROM Grades
 GROUP BY Grade
 ORDER BY NumberOfStudents DESC;
+
+-- Find the course with the highest number of A grades
+SELECT c.CourseName, COUNT(g.GradeID) AS NumberOfAs
+FROM Grades g
+JOIN Enrollments e ON g.EnrollmentID = e.EnrollmentID
+JOIN Courses c ON e.CourseID = c.CourseID
+WHERE g.Grade = 'A'
+GROUP BY c.CourseName
+ORDER BY NumberOfAs DESC
+LIMIT 1;
