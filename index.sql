@@ -106,3 +106,9 @@ SELECT * FROM Enrollments;
 
 -- Retrieving all data from Grades tables without any conditions
 SELECT * FROM Grades;
+
+-- Grade scoring analysis
+SELECT Grade, COUNT(EnrollmentID) AS NumberOfStudents
+FROM Grades
+GROUP BY Grade
+ORDER BY NumberOfStudents DESC;
