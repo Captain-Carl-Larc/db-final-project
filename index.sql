@@ -80,3 +80,16 @@ INSERT INTO Enrollments (StudentID, CourseID, AcademicYear) VALUES
 (3, 7, '2024-2025'),
 (6, 6, '2023-2024'),
 (4, 8, '2024-2025');
+
+-- Inserting into Grades table
+INSERT INTO Grades (EnrollmentID, Grade) VALUES
+(1, 'A'),
+(2, 'B'),
+(3, 'A-'),
+(4, 'B+'),
+(5, 'C'),
+(6, 'A'),
+(7, 'B'),
+(8, 'A'),
+(9, 'C+'),
+(10, 'B-');
