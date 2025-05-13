@@ -100,3 +100,6 @@ SELECT * FROM Students;
 
 -- Retrieving all data from Courses tables without any conditions
 SELECT * FROM Courses;
+
+-- Retrieving all data from Enrollments tables without any conditions
+SELECT * FROM Enrollments;
