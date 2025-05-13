@@ -103,3 +103,6 @@ SELECT * FROM Courses;
 
 -- Retrieving all data from Enrollments tables without any conditions
 SELECT * FROM Enrollments;
+
+-- Retrieving all data from Grades tables without any conditions
+SELECT * FROM Grades;
