@@ -53,3 +53,16 @@ INSERT INTO Students (FirstName, LastName, DateOfBirth, Email, PhoneNumber, Addr
 ('Hannah', 'Taylor', '2001-12-05', 'hannah.taylor@example.com', '888-999-0000', '555 Cedar Ln'),
 ('Ian', 'Clark', '2003-07-18', 'ian.clark@example.com', '333-444-5555', '666 Oak Rd'),
 ('Jane', 'Lewis', '2002-02-28', 'jane.lewis@example.com', '999-000-1111', '777 Pine Ct');
+
+-- Inserting into Courses table
+INSERT INTO Courses (CourseName, CourseCode, Department) VALUES
+('Introduction to Programming', 'CS101', 'Computer Science'),
+('Calculus I', 'MA101', 'Mathematics'),
+('Linear Algebra', 'MA201', 'Mathematics'),
+('Database Management', 'CS305', 'Computer Science'),
+('Organic Chemistry', 'CH201', 'Chemistry'),
+('Physics I', 'PH101', 'Physics'),
+('Data Structures and Algorithms', 'CS202', 'Computer Science'),
+('Probability and Statistics', 'ST201', 'Statistics'),
+('Thermodynamics', 'PH202', 'Physics'),
+('Advanced Algorithms', 'CS401', 'Computer Science');
