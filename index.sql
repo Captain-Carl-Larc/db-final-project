@@ -23,6 +23,7 @@ CREATE TABLE Courses (
     Department VARCHAR(50)
 );
 
+-- Create Enrollments table
 CREATE TABLE Enrollments (
     EnrollmentID INT PRIMARY KEY AUTO_INCREMENT,
     StudentID INT,
@@ -30,4 +31,12 @@ CREATE TABLE Enrollments (
     AcademicYear VARCHAR(10),
     FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
     FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
+);
+
+-- Create Grades table
+CREATE TABLE Grades (
+    GradeID INT PRIMARY KEY AUTO_INCREMENT,
+    EnrollmentID INT,
+    Grade VARCHAR(2),
+    FOREIGN KEY (EnrollmentID) REFERENCES Enrollments(EnrollmentID)
 );
