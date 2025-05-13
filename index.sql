@@ -93,3 +93,9 @@ INSERT INTO Grades (EnrollmentID, Grade) VALUES
 (8, 'A'),
 (9, 'C+'),
 (10, 'B-');
+
+-- DATA RETIREVAL
+-- Retrieving all data from Students tables without any conditions
+SELECT * FROM Students;
+
+
